@@ -7,3 +7,5 @@ class Links:
 
 
     page_menu_url = "https://demoqa.com/menu"
+
+    page_droppable_url = "https://demoqa.com/droppable"

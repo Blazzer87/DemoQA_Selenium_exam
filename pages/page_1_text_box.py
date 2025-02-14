@@ -25,7 +25,7 @@ class Page1TextBox(BasePage):
         self.fullname = fullname
 
     def enter_email(self, email):
-        self.wait.until(EC.element_to_be_clickable(self.full_name_locator)).send_keys(email)
+        self.wait.until(EC.element_to_be_clickable(self.email_locator)).send_keys(email)
         self.email = email
 
     def enter_current_adress(self, current_adress):
@@ -41,6 +41,5 @@ class Page1TextBox(BasePage):
 
     def check_result(self):
          self.text = self.wait.until(EC.element_to_be_clickable(self.test_field_locator)).get_property("textContent")
-         print("Вот что получилось", self.text)
-         assert self.text == f"Name:{self.fullname}{self.email}Current Address :{self.current_adress} Permananet Address :{self.permanent_adress}", "Текст не совпадает"
+         assert self.text == f"Name:{self.fullname}Email:{self.email}Current Address :{self.current_adress} Permananet Address :{self.permanent_adress}", "Текст не совпадает"
 
