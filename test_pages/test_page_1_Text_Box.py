@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
-def driver():
+def start_driver():
     options = webdriver.ChromeOptions()  # создаём опции хрома
     options.add_argument('start-maximized')  # передаём фулскрин в опции хрома
     options.add_argument('incognito')  # передаём инкогнито в опции хрома
@@ -15,14 +15,28 @@ def driver():
     driver = webdriver.Chrome(options)
     return driver
 
-def open(driver):
-    wait = WebDriverWait(driver, 2)
-    driver.get("https://demoqa.com/text-box")
+
+class BasePage:
+
+    def __init__(self):
+        driver = start_driver()
+        self.driver = driver
+        self.wait = WebDriverWait(driver, 2)
+
+    def open(self, url):
+        self.driver.get(url)
+
+    def __del__(self):
+        self.driver.close()
+
+class Links:
+
+    text_box = "https://demoqa.com/text-box"
 
 
-class Page1TextBox:
+class Page1TextBox (BasePage):
 
-    full_name = "ABCDE"
+    URL = Links.text_box
 
     text_box_locator = (By.XPATH, '//span[text()="Text Box"]')
     full_name_locator = (By.XPATH, '//input[@id="userName"]')
@@ -36,9 +50,19 @@ class Page1TextBox:
         self.wait.until(EC.element_to_be_clickable(self.full_name_locator)).send_keys(full_name)
 
 
+    def enter_email(self, email):
+        self.driver.find_element(*self.email_locator).send_keys(email)
 
-open(driver())
-page = Page1TextBox()
-page.enter_full_name(page.full_name)
 
-time.sleep(3)
+class BaseTest:
+
+    x = Page1TextBox()
+
+
+class Test1(BaseTest):
+
+    def test_text_box(self):
+        self.x.open(self.x.URL)
+        self.x.enter_full_name('gfdgdfgdfgfgsfgdsgf')
+        self.x.enter_email('gdsgfdsgdfgertqewrtewrewrewr')
+        time.sleep(2)
