@@ -11,8 +11,6 @@ class Page23Menu(BasePage):
 
     url = Links.page_menu_url
 
-    action = None
-
     main_item_1_locator = ('xpath', '//a[text()="Main Item 1"]')
     main_item_2_locator = ('xpath', '//a[text()="Main Item 2"]')
     main_item_3_locator = ('xpath', '//a[text()="Main Item 3"]')
