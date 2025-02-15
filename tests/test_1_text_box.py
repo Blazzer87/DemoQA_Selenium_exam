@@ -1,7 +1,5 @@
-import time
 
 from tests.base_test import BaseTest
-from pages.page_1_text_box import Page1TextBox
 from conftest import driver
 
 class TestTextBox(BaseTest):
