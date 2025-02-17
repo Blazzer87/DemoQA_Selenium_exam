@@ -28,12 +28,13 @@ class Page5Buttons(BasePage):
         self.action.pause(1)
 
 
-"""    
+"""    Дописать авто-тесты на успешность нажатия
 def check_double_click (self):
 def check_right_click(self):
 def check_click(self):
 """
 
-""" check_double_click_locator =
-    check_right_click_locator =
-    check_click_locator ="""
+"""     локаторы для авто-тестов
+check_double_click_locator =
+check_right_click_locator =
+check_click_locator ="""

@@ -1,3 +1,4 @@
+import time
 
 from tests.base_test import BaseTest
 from conftest import driver
@@ -12,3 +13,4 @@ class TestTextBox(BaseTest):
         self.page_textbox.enter_permanent_adress("Москва")
         self.page_textbox.click_submit_button()
         self.page_textbox.check_result()
+        time.sleep(2)
