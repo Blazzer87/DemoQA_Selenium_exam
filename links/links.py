@@ -20,3 +20,5 @@ class Links:
     page_droppable_url = f"{host}/droppable"
 
     page_browser_url = f"{host}/browser-windows"
+
+    page_alerts_url = f"{host}/alerts"
