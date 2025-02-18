@@ -3,9 +3,9 @@ import time
 from tests.base_test import BaseTest
 from conftest import driver
 
-class TestTextBox(BaseTest):
+class Test1TextBox(BaseTest):
 
-    def test_text_box(self):
+    def test_1_text_box(self):
         self.page_textbox.open_page(self.page_textbox.url)
         self.page_textbox.enter_fullname('SERGEY')
         self.page_textbox.enter_email('laba@qpd.ru')

@@ -15,4 +15,8 @@ class Links:
 
     page_menu_url = f"{host}/menu"
 
+    page_sortable_url = f"{host}/sortable"
+
     page_droppable_url = f"{host}/droppable"
+
+    page_browser_url = f"{host}/browser-windows"

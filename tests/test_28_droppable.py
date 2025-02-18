@@ -3,9 +3,9 @@ import time
 from tests.base_test import BaseTest
 from conftest import driver
 
-class TestDroppable(BaseTest):
+class Test28Droppable(BaseTest):
 
-    def test_droppable(self):
+    def test_28_droppable(self):
         time.sleep(2)
         self.page_droppable.open_page(self.page_droppable.url)
         self.page_droppable.create_action()
