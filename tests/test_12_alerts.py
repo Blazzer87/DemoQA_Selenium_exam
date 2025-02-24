@@ -1,5 +1,4 @@
 import time
-from conftest import driver
 from tests.base_test import BaseTest
 
 

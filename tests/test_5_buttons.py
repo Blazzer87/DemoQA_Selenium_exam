@@ -1,7 +1,6 @@
 import time
-
 from tests.base_test import BaseTest
-from conftest import driver
+
 
 class Test5Buttons(BaseTest):
 
