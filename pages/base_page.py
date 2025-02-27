@@ -1,6 +1,6 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
-from conftest import driver
+from tests.conftest import driver
 
 
 class BasePage:

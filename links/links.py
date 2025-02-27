@@ -15,3 +15,5 @@ class Links:
     page_browser_url = f"{host}/browser-windows"
     page_alerts_url = f"{host}/alerts"
     page_nested_frames = f"{host}/nestedframes"
+    page_progress_bar = f"{host}/progress-bar"
+    page_slider = f"{host}/slider"
