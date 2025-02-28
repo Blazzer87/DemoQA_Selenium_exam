@@ -17,3 +17,6 @@ class Links:
     page_nested_frames = f"{host}/nestedframes"
     page_progress_bar = f"{host}/progress-bar"
     page_slider = f"{host}/slider"
+    page_resizable = f"{host}/resizable"
+
+

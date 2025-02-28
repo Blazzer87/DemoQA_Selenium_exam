@@ -7,6 +7,7 @@ from pages.page_1_text_box import Page1TextBox
 from pages.page_20_progress_bar import Page20ProgressBar
 from pages.page_23_menu import Page23Menu
 from pages.page_25_sortable import Page25Sortable
+from pages.page_27_resizable import Page27Resizable
 from pages.page_28_droppable import Page28Droppable
 from pages.page_5_buttons import Page5Buttons
 from pages.page_8_upload_download import Page8UpDownload
@@ -29,3 +30,5 @@ class BaseTest:
         self.page_nested_frames = Page14NestedFrames(driver)
         self.page_progress_bar = Page20ProgressBar(driver)
         self.page_slider = Page19Slider(driver)
+        self.page_resizable = Page27Resizable(driver)
+

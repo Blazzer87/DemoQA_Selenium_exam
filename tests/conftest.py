@@ -8,7 +8,7 @@ def driver():
     options = webdriver.ChromeOptions()
     options.add_argument('start-maximized')
     options.add_argument('incognito')
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     options.page_load_strategy = 'eager'        # приложение не стабильно, поэтому ставим раннюю загрузку
     driver = webdriver.Chrome(options)
     yield driver
