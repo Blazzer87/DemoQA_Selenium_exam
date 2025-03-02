@@ -1,5 +1,5 @@
 import time
-from tests.base_test import BaseTest
+from base.base_test import BaseTest
 
 
 class Test20ProgressBar(BaseTest):

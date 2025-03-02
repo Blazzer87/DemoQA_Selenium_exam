@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from links.links import Links
-from pages.base_page import BasePage
+from base.base_page import BasePage
 from selenium.webdriver.support import expected_conditions as EC
 
 

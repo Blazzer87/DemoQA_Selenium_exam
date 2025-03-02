@@ -1,6 +1,4 @@
-import pytest
-
-from tests.base_test import BaseTest
+from base.base_test import BaseTest
 
 
 class Test27Resizable(BaseTest):
