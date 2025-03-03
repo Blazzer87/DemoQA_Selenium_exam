@@ -34,8 +34,6 @@ class Page19Slider(BasePage):
             self.action.perform()
 
 
-
-
     def check_fact_value(self):
         return int(self.wait.until(EC.element_to_be_clickable(self.input_locator)).get_attribute('defaultValue')) == self.target_value
 

@@ -18,5 +18,6 @@ class Links:
     page_progress_bar = f"{host}/progress-bar"
     page_slider = f"{host}/slider"
     page_resizable = f"{host}/resizable"
+    page_auto_complete = f"{host}/auto-complete"
 
 

@@ -2,6 +2,7 @@ import pytest
 from pages.page_11_browser import Page11Browser
 from pages.page_12_alerts import Page12Alerts
 from pages.page_14_nested_frames import Page14NestedFrames
+from pages.page_17_auto_complete import Page17AutoComplete
 from pages.page_19_slider import Page19Slider
 from pages.page_1_text_box import Page1TextBox
 from pages.page_20_progress_bar import Page20ProgressBar
@@ -31,4 +32,6 @@ class BaseTest:
         self.page_progress_bar = Page20ProgressBar(driver)
         self.page_slider = Page19Slider(driver)
         self.page_resizable = Page27Resizable(driver)
+        self.page_auto_complete = Page17AutoComplete(driver)
+
 
